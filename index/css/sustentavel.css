@@ -1,0 +1,113 @@
+.titulo{
+  min-height: 200px;
+     background-color: rgb(216, 218, 226);
+     box-shadow: 1px 1px 25px #0000007a;
+   }
+   .logo{
+     height: auto;
+     max-width: 30%;
+     max-height: 30%;
+   }
+ 
+   .logoetec{
+     height: auto;
+     max-width: 17%;
+     max-height: 17%;
+     margin-right: 4%;
+     margin-left: 2%;
+     margin-bottom: 1%;
+   }
+.bot{
+  width: 150px;
+}
+.tamanho{
+margin-top: 20px;
+width: 390px;
+height: 430px;
+}
+.barras {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgb(2, 27, 82);
+  padding: 20px;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+.barra-esq {
+  left: 0;
+}
+.meio {
+  margin: 0 230px; /* Espaço para as barras laterais */
+  padding: 20px;
+  background-color: rgb(216, 218, 226);
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.479);
+  border-radius: 30px;
+}
+.sombra{
+  box-shadow: 1px 1px 7px rgb(21, 35, 82);
+}
+.centro{
+display: grid;
+place-items: center;
+}
+.centro2{
+display: flex;
+justify-content: center;
+place-items: center;
+}
+.separar{
+gap: 11px;
+}
+.separar2{
+gap: 100px;
+}
+.margen{
+margin-top: 20px;
+}
+@media (max-width: 1200px) {
+  .barras {
+      width: 150px; /* Ajusta a largura das barras laterais */
+  }
+
+  .meio {
+      margin: 0 10px; /* Margem reduzida em telas menores */
+  }
+}
+
+@media (max-width: 900px) {
+  .barras {
+      width: 120px; /* Ajusta a largura das barras laterais */
+  }
+
+  .titulo {
+      margin: 10px; /* Margens menores */
+  }
+
+  .meio {
+      margin: 0 5px; /* Margem ainda menor */
+  }
+
+  .separar2 {
+      gap: 20px; /* Ajuste de gap para telas pequenas */
+  }
+}
+
+@media (max-width: 600px) {
+  .barras {
+      width: 100px; /* Ajusta a largura das barras laterais */
+  }
+
+  .titulo {
+      font-size: 18px; /* Ajuste de tamanho da fonte */
+  }
+
+  .tamanho {
+      width: 95%; /* Ajuste para ocupar 95% da largura */
+  }
+
+  .bot {
+      width: 100%; /* Botão ocupa 100% da largura */
+  }
+}
